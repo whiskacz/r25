@@ -1,17 +1,31 @@
-import React from 'react';
+import React from "react"
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ExpensesForm from "./components/ExpensesForm";
+import ExpensesList from "./components/ExpensesList";
+import ExpensesBudget from "./components/ExpensesBudget";
+import './styled/index.css'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function R25App () {
+    return (
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+        <div style={{
+            display:"flex",
+            flexDirection:"row",
+            flexWrap:"wrap",
+            gap:"50px",
+            width:"100vw",
+            height:"100vh",
+            background:"lightblue",
+            justifyContent:"space-between",
+            
+        }}>
+            <ExpensesForm /> 
+            <ExpensesBudget />
+            <ExpensesList />
+        </div>
+    )
+}
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<R25App />)
