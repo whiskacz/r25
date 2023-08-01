@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import ExpensesForm from "./components/ExpensesForm";
 import ExpensesList from "./components/ExpensesList";
 import ExpensesBudget from "./components/ExpensesBudget";
-import './styled/index.css'
+import './style/index.css'
 
 function R25App () {
     return (
@@ -12,11 +12,11 @@ function R25App () {
             display:"flex",
             flexDirection:"row",
             flexWrap:"wrap",
-            gap:"50px",
             width:"100vw",
             height:"100vh",
             background:"lightblue",
-            justifyContent:"space-between",
+            justifyContent:"space-around",
+            alignItems:'center'
             
         }}>
             <ExpensesForm /> 
