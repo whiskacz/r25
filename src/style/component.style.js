@@ -7,8 +7,8 @@ flex-direction: column;
 justify-content: center;
 align-items: flex-start;
 background-color: #ddd;
-width: 30%;
-height: 35%;
+width: 100%;
+height: 100%;
 border-radius: 20px;
 background-color: #483D8B;
 color: #fff;
@@ -19,11 +19,11 @@ input{
     margin: 0px 20px 15px;
 }
 label{
-    margin: 0px 20px 5px;
+    margin: 20px 20px 5px;
 }
 
 button {
-    margin-top: 30px;
+    margin: 30px;
     width: 80%;
     align-self: center;
     height: 10%;
@@ -48,7 +48,7 @@ flex-direction: column;
 justify-content: center;
 align-items: flex-end;
 background-color: #ddd;
-width: 30%;
+width: 100%;
 height: 20%;
 border-radius: 20px;
 background-color: #483D8B;
@@ -83,10 +83,12 @@ export const ItemWrapper = styled.div `
 
 display: flex;
 flex-direction: row;
-width:30vw;
+justify-content: space-between;
+align-items: center;
+width:100%;
 height: 50px;
 background-color: #eee;
 border-radius: 5px;
 box-shadow: 0px 0px 13px 0px rgba(147, 147, 179, 1);
-
+padding: 10px;
 `
